@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useReducer } from 'react'
 import { css } from 'glamor'
 import { Link } from 'react-router-dom'
-import uuid from 'uuid/v4'
+import {v4 as uuid} from 'uuid'
 import { listPosts } from './graphql/queries'
 import { onCreatePost } from './graphql/subscriptions'
 import { API, graphqlOperation } from 'aws-amplify'
