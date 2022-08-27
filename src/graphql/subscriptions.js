@@ -3,7 +3,7 @@
 
 export const onCreatePost = /* GraphQL */ `
   subscription OnCreatePost($filter: ModelSubscriptionPostFilterInput) {
-    onCreatePost(filter: $filter) {
+    onCreatePost {
       id
       clientId
       markdown
@@ -15,7 +15,7 @@ export const onCreatePost = /* GraphQL */ `
 `;
 export const onUpdatePost = /* GraphQL */ `
   subscription OnUpdatePost($filter: ModelSubscriptionPostFilterInput) {
-    onUpdatePost(filter: $filter) {
+    onUpdatePost {
       id
       clientId
       markdown
@@ -27,7 +27,7 @@ export const onUpdatePost = /* GraphQL */ `
 `;
 export const onDeletePost = /* GraphQL */ `
   subscription OnDeletePost($filter: ModelSubscriptionPostFilterInput) {
-    onDeletePost(filter: $filter) {
+    onDeletePost {
       id
       clientId
       markdown

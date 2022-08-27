@@ -9,26 +9,18 @@ export const getPost = /* GraphQL */ `
       markdown
       title
       createdAt
-      updatedAt
     }
   }
 `;
 export const listPosts = /* GraphQL */ `
-  query ListPosts(
-    $filter: ModelPostFilterInput
-    $limit: Int
-    $nextToken: String
-  ) {
-    listPosts(filter: $filter, limit: $limit, nextToken: $nextToken) {
+  query ListPosts {
+    listPosts(limit: 500) {
       items {
         id
         clientId
-        markdown
         title
         createdAt
-        updatedAt
       }
-      nextToken
     }
   }
 `;

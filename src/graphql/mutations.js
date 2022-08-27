@@ -6,7 +6,7 @@ export const createPost = /* GraphQL */ `
     $input: CreatePostInput!
     $condition: ModelPostConditionInput
   ) {
-    createPost(input: $input, condition: $condition) {
+    createPost(input: $input) {
       id
       clientId
       markdown
@@ -21,7 +21,7 @@ export const updatePost = /* GraphQL */ `
     $input: UpdatePostInput!
     $condition: ModelPostConditionInput
   ) {
-    updatePost(input: $input, condition: $condition) {
+    updatePost(input: $input) {
       id
       clientId
       markdown
@@ -36,7 +36,7 @@ export const deletePost = /* GraphQL */ `
     $input: DeletePostInput!
     $condition: ModelPostConditionInput
   ) {
-    deletePost(input: $input, condition: $condition) {
+    deletePost(input: $input) {
       id
       clientId
       markdown
