@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-livecollabeditor-dev-232934-authRole",
+      "UnauthRoleArn": "arn:aws:iam::720980562242:role/amplify-livecollabeditor-dev-232934-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::720980562242:role/amplify-livecollabeditor-dev-232934-authRole",
+      "Region": "us-west-1",
+      "DeploymentBucketName": "amplify-livecollabeditor-dev-232934-deployment",
+      "UnauthRoleName": "amplify-livecollabeditor-dev-232934-unauthRole",
+      "StackName": "amplify-livecollabeditor-dev-232934",
+      "StackId": "arn:aws:cloudformation:us-west-1:720980562242:stack/amplify-livecollabeditor-dev-232934/9d8ba280-25d1-11ed-946e-06921435b933",
+      "AmplifyAppId": "d3kyex0n14r03f"
+    }
+  }
+}
