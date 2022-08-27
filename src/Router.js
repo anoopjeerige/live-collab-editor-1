@@ -1,5 +1,5 @@
 import React from 'react'
-import { HashRouter as Router, Switch, Route } from 'react-router-dom'
+import { HashRouter as Router, Routes, Route } from 'react-router-dom'
 
 import Post from './Post'
 import Posts from './Posts'
@@ -8,10 +8,10 @@ function Main() {
   return (
     <Router>
       <div>
-        <Switch>
-          <Route exact path="/" component={Posts} />
-          <Route path="/post/:id/:title?" component={Post} />
-        </Switch>
+        <Routes>
+          <Route path="/" element={<Posts/>} />
+          <Route path="/post/:id/:title?" element={<Post/>} />
+        </Routes>
       </div>
     </Router>
   )
