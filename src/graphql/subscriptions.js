@@ -37,3 +37,13 @@ export const onDeletePost = /* GraphQL */ `
     }
   }
 `;
+export const onUpdatePostWithId = `subscription onUpdatePostWithId($id: ID!) {
+  onUpdatePostWithId(id: $id) {
+    id
+    clientId
+    markdown
+    title
+    createdAt
+  }
+}
+`;
